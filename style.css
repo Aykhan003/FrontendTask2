@@ -6,9 +6,49 @@ box-sizing: border-box;
 body{
     font-family: 'Courier New', Courier, monospace;
     background-color: antiquewhite;
-    color: aliceblue;
+    color: rgb(21, 22, 22);
 }
 .container{
     width: 94%;
-    
+    max-width: 1450px;
+    margin: 20px auto;
+    padding: 50px 4%;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 80px;
+}
+.card img{
+    width: 36%;
+    height: 237px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.content{
+    flex: 1;
+}
+.content h2{
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 4px;
+    color: #292929;
+}
+.content p {
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.content a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: #007bff;
 }
